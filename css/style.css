@@ -538,6 +538,7 @@ footer .copyright {
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
 .hamberger img {
@@ -585,6 +586,9 @@ footer .copyright {
 @media (max-width:1024px) {
     header #main-nav {
         display: none;
+    }
+    .hamberger {
+        display: block;
     }
     .hero .left img {
         width: 260px;
@@ -648,6 +652,7 @@ footer .copyright {
     }
     section.services .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 6rem;
     }
     section.freelancer h1 {
         line-height: 1.4;
@@ -658,5 +663,14 @@ footer .copyright {
     }
     section.reviews .slider .slide {
         padding: 0 1rem;
+    }
+    section-heading + p {
+        margin-bottom: 3rem;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section.contact .input-wrap {
+    grid-template-columns: repeat(1, 1fr);
     }
 }
